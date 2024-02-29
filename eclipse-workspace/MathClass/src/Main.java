@@ -7,7 +7,7 @@ public class Main {
 		
 		System.out.println(Math.max(x, y));
 		
-		double a, b, c;
+		double a, b;
 		
 		Scanner scanner = new Scanner(System.in);
 		
