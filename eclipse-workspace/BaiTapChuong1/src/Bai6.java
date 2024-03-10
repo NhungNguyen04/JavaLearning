@@ -8,7 +8,8 @@ public class Bai6 {
     	System.out.println("Nhap nam: ");
     	int nam = scanner.nextInt();
     	scanner.close();
-        // Lấy lịch năm 2024
+    	
+    	// Lấy lịch năm cần biết
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.YEAR, nam);
 
