@@ -8,12 +8,17 @@
 
 package Bai1;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 
 public class Person {
 	
 	static Scanner scanner = new Scanner(System.in);
+	static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
 	
 	// thuoc tinh
 	String hoTen, tuoi, diaChi;
@@ -30,11 +35,26 @@ public class Person {
 	// ham nhap
 	public void nhap() {
 		System.out.println("Nhap ho ten: ");
-		hoTen = scanner.next();
+		try {
+			hoTen = reader.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println("Nhap tuoi: ");
-		tuoi = scanner.next();
+		try {
+			tuoi = reader.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println("Nhap dia chi: ");
-		diaChi = scanner.next();
+		try {
+			diaChi = reader.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	// ham xuat
